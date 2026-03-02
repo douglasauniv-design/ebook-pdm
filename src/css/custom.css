@@ -1,0 +1,45 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* Modo Claro (Cores um pouco mais escuras para contraste no fundo branco) */
+:root {
+  --ifm-color-primary: #0d9488; /* Um ciano mais fechado para leitura */
+  --ifm-color-primary-dark: #0f766e;
+  --ifm-color-primary-darker: #115e59;
+  --ifm-color-primary-darkest: #134e4a;
+  --ifm-color-primary-light: #14b8a6;
+  --ifm-color-primary-lighter: #2dd4bf;
+  --ifm-color-primary-lightest: #5eead4;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+/* Modo Escuro (Cores vibrantes como nas imagens) */
+[data-theme="dark"] {
+  --ifm-color-primary: #2dd4bf; /* O ciano neon das imagens */
+  --ifm-color-primary-dark: #14b8a6;
+  --ifm-color-primary-darker: #0d9488;
+  --ifm-color-primary-darkest: #0f766e;
+  --ifm-color-primary-light: #5eead4;
+  --ifm-color-primary-lighter: #99f6e4;
+  --ifm-color-primary-lightest: #ccfbf1;
+  --docusaurus-highlighted-code-line-bg: rgba(45, 212, 191, 0.1);
+}
+
+/* Estilo personalizado para o botão do E-book */
+.btn-ebook {
+  background-color: #facc15 !important; /* Amarelo Raio */
+  color: #000 !important; /* Texto preto para contraste */
+  border: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(250, 204, 21, 0.3);
+}
+
+.btn-ebook:hover {
+  background-color: #eab308 !important; /* Amarelo um pouco mais escuro no hover */
+  transform: scale(1.05);
+  text-decoration: none;
+}
