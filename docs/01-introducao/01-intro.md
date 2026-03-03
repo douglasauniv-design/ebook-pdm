@@ -102,4 +102,6 @@ Em resumo, o Expo nos permite colher todos os benefícios do React Native (UI na
 
 ---
 
+:::info Próxima Aula: Configuração do Ambiente
 Agora que entendemos o caminho que nos trouxe até aqui e as ferramentas que temos em mãos, estamos prontos para começar a construir nosso primeiro aplicativo na próxima aula!
+:::
