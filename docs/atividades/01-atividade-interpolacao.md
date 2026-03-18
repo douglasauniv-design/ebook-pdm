@@ -12,7 +12,7 @@ Construir uma tela que utilize Interpolação de variáveis e Loops de renderiza
 
 ## Instruções da Atividade
 
-**1. Preparação dos Dados**
+### 1. Preparação dos Dados
 
 No topo do seu componente (antes do `return`), crie um array de objetos chamado `dataList`. Escolha um tema e defina pelo menos 3 itens.
 
@@ -23,7 +23,7 @@ Cada objeto deve ter:
 - `category`: Categoria (ex: 'SUV', 'Ação', 'Sobremesa').
 - `onSale`: Um valor booleano (`true` ou `false`).
 
-**2. Interface e Interpolação**
+### 2. Interface e Interpolação
 
 Dentro do seu `return`, você deve:
 
@@ -32,7 +32,7 @@ Dentro do seu `return`, você deve:
 - **Exibir dados condicionalmente**: Se `onSale` for `true`, exiba um pequeno texto ou ícone de "OFERTA" (você pode usar um badge, como nos exemplos da aula).
   - **Dica**: Use um operador ternário para mudar a cor do preço (ex: verde se estiver em oferta, cinza se não estiver).
 
-**3. Regras Técnicas**
+### 3. Regras Técnicas
 
 - Use o **índice** (`index`) do map como a propriedade `key` de cada item.
 - Mantenha o **código** (variáveis e propriedades) em **inglês**.
