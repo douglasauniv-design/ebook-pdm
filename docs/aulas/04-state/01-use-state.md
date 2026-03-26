@@ -1,7 +1,7 @@
 import SnackEmbedded from '@site/src/components/Snack/SnackEmbedded';
 import Link from "@docusaurus/Link";
 
-# Componentes Reutilizáveis com Props
+# Gerenciamento de Estado
 
 Até agora, criamos componentes estáticos, ou seja, nossas telas eram como "fotografias": uma vez renderizadas com as **Props**, elas não mudavam. O **State** (Estado) é o que permite que o componente tenha uma "memória" e se atualize dinamicamente. Nesta aula, vamos aprender sobre o `useState`!
 
