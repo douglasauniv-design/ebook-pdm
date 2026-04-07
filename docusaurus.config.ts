@@ -69,13 +69,19 @@ const config: Config = {
           type: "docSidebar",
           sidebarId: "aulasSidebar",
           position: "left",
-          label: "Aulas",
+          label: "📖 Aulas",
         },
         {
           type: "docSidebar",
           sidebarId: "atividadesSidebar",
           position: "left",
-          label: "Atividades", // Mostra o conteúdo de docs/atividades
+          label: "⚡ Atividades", // Mostra o conteúdo de docs/atividades
+        },
+        {
+          type: "docSidebar",
+          sidebarId: "projsSidebar",
+          position: "left",
+          label: "🛠️ Projetos",
         },
         {
           href: "https://github.com/andresjesse",
