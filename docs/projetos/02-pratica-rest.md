@@ -24,7 +24,7 @@ Cada requisito vale 1 ponto na avaliação final da atividade:
 
 ### 1. Navegação com Expo Router
 O fluxo de telas da aplicação deve ser gerenciado obrigatoriamente usando o **Expo Router**. A estrutura de rotas deve separar as telas em dois grandes fluxos:
-* **Fluxo de Autenticação**: Contendo pelo menos uma tela de Login pública.
+* **Fluxo de Autenticação**: Contendo pelo menos uma tela de Login pública (com um formulário adequado).
 * **Fluxo Restrito**: Contendo as telas de manipulação de dados, que só devem ser acessíveis caso o usuário esteja devidamente autenticado.
 
 ### 2. Autenticação com Context API
