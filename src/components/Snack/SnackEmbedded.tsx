@@ -1,11 +1,47 @@
-import React from "react";
+import React, { useEffect } from "react";
 import useBaseUrl from "@docusaurus/useBaseUrl";
 
 type SnackEmbeddedProps = {
   snackId: string;
 };
 
+declare global {
+  interface Window {
+    ExpoSnack?: {
+      initialize: () => void;
+      append: (container: HTMLElement, options?: any) => void;
+      remove: (container: HTMLElement) => void;
+    };
+  }
+}
+
 export default function SnackEmbedded({ snackId }: SnackEmbeddedProps) {
+  useEffect(() => {
+    const initSnack = () => {
+      if (window.ExpoSnack) {
+        window.ExpoSnack.initialize();
+      }
+    };
+
+    if (window.ExpoSnack) {
+      initSnack();
+    } else {
+      const scriptId = "expo-snack-embed-script";
+      let script = document.getElementById(scriptId) as HTMLScriptElement;
+
+      if (!script) {
+        script = document.createElement("script");
+        script.id = scriptId;
+        script.src = "https://snack.expo.dev/embed.js";
+        script.async = true;
+        script.onload = initSnack;
+        document.body.appendChild(script);
+      } else {
+        script.addEventListener("load", initSnack);
+      }
+    }
+  }, [snackId]);
+
   return (
     <>
       <a
@@ -32,7 +68,6 @@ export default function SnackEmbedded({ snackId }: SnackEmbeddedProps) {
         data-snack-theme="light"
         className="snack"
       ></div>
-      <script async src="https://snack.expo.dev/embed.js"></script>
     </>
   );
 }
