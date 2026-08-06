@@ -10,9 +10,9 @@ const config: Config = {
   favicon: "img/favicon.ico",
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
-  future: {
-    v4: true, // Improve compatibility with the upcoming Docusaurus v4
-  },
+  // future: {
+  //   v4: true,
+  // },
 
   url: "https://andresjesse.github.io", // URL base do seu GitHub Pages
   baseUrl: "/ebook-pdm/", // Nome exato do seu repositório
