@@ -1,5 +1,6 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import useBaseUrl from "@docusaurus/useBaseUrl";
+import { useColorMode } from "@docusaurus/theme-common";
 
 type SnackEmbeddedProps = {
   snackId: string;
@@ -16,9 +17,15 @@ declare global {
 }
 
 export default function SnackEmbedded({ snackId }: SnackEmbeddedProps) {
+  const { colorMode } = useColorMode();
+  const containerRef = useRef<HTMLDivElement>(null);
+
   useEffect(() => {
+    const container = containerRef.current;
+
     const initSnack = () => {
-      if (window.ExpoSnack) {
+      if (window.ExpoSnack && container) {
+        window.ExpoSnack.remove(container);
         window.ExpoSnack.initialize();
       }
     };
@@ -40,7 +47,7 @@ export default function SnackEmbedded({ snackId }: SnackEmbeddedProps) {
         script.addEventListener("load", initSnack);
       }
     }
-  }, [snackId]);
+  }, [snackId, colorMode]);
 
   return (
     <>
@@ -60,12 +67,13 @@ export default function SnackEmbedded({ snackId }: SnackEmbeddedProps) {
       </a>
 
       <div
+        ref={containerRef}
         data-snack-id={snackId}
         data-snack-platform="web"
         data-snack-preview="true"
         data-snack-files="true"
         data-snack-loading="lazy"
-        data-snack-theme="light"
+        data-snack-theme={colorMode}
         className="snack"
       ></div>
     </>
