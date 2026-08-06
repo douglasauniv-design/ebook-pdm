@@ -153,6 +153,6 @@ Agora que você conhece a estrutura, vamos aplicar esse conhecimento criando um 
 
 ---
 
-:::info Próxima Aula: Navegação com React Navigation
-Com o estado global gerenciado, o próximo desafio é permitir que o usuário navegue entre diferentes telas de forma fluida. Vamos aprender a utilizar o **React Navigation** para criar fluxos de telas profissionais.
+:::info Próxima Aula: Persistência de Dados com Async Storage
+Com o estado e o contexto gerenciados em memória, o próximo desafio é aprender a salvar dados de forma permanente no dispositivo. Na próxima aula, exploraremos a persistência de dados local com o **Async Storage**.
 :::

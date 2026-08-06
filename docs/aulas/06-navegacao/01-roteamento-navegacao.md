@@ -280,6 +280,6 @@ Agora que você conhece a estrutura, vamos aplicar esse conhecimento criando um 
 > Acesse a <Link to="/docs/atividades/atividade-roteamento">**Atividade: Roteamento com Expo Router**</Link> para praticar a implementação de telas de Login e Dashboard com passagem de parâmetros.
 
 
-:::info Próxima Aula: Persistência de Dados com Async Storage
-Na próxima aula, implementaremos a persistência de dados em nosso aplicativo utilizando um dos mecanismos mais primitivos disponíveis no ecossistema mobile: o `Async Storage`.
+:::info Próxima Aula: Elementos Básicos de Interface
+Na próxima aula, vamos focar na construção de interfaces visuais, explorando os componentes fundamentais do React Native para estruturar e organizar o conteúdo de cada tela do seu aplicativo.
 :::

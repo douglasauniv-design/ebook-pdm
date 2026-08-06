@@ -54,8 +54,8 @@ Para cada requisição assíncrona feita pelo app (leitura e escrita), implement
 
 > Atenção: se você usa o Expo Web, use o alert do browser ao invés do Alert.alert do react-native (o Alert.alert não funciona no Expo Web).
 
-### 9. Estilização e Conceitos de Layout (Aula 08)
-A estilização da interface é livre (sendo criada a identidade visual pelo aluno), mas deve seguir as boas práticas ensinadas na Aula 08:
+### 9. Estilização e Conceitos de Layout (Aula 09)
+A estilização da interface é livre (sendo criada a identidade visual pelo aluno), mas deve seguir as boas práticas ensinadas na Aula 09:
 * Utilização de `StyleSheet.create` para organizar e estruturar os estilos.
 * Uso de Flexbox para estruturação do layout de cada tela.
 * Separação física dos estilos de componentes reutilizáveis, garantindo legibilidade e manutenção do código (não vale colocar os estilos hardcoded na tag style!).

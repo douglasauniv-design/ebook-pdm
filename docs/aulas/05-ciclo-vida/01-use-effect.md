@@ -134,6 +134,6 @@ Imagine um contador que atualiza a cada segundo. Se não limparmos o `setInterva
 
 > Para exercitar o uso de estados, preparei um desafio prático onde você vai construir uma tela que simula um sensor de proximidade. Acesse a <Link to="/docs/atividades/atividade-use-effect">**Atividade: useEffect**</Link> no menu de atividades deste E-Book.
 
-:::info Próxima Aula: Componentes Básicos de Interface
-Agora que você domina a lógica de estado e o controle do ciclo de vida, na próxima aula vamos focar na construção da interface, explorando os componentes fundamentais do React Native para estruturar e organizar o conteúdo visual do seu aplicativo.
+:::info Próxima Aula: Roteamento e Navegação
+Agora que você domina a lógica de estado e o controle do ciclo de vida, na próxima aula vamos aprender como organizar seu aplicativo em múltiplas telas utilizando o Expo Router, a solução moderna de roteamento baseado em arquivos do ecossistema React Native.
 :::
