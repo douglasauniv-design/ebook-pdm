@@ -114,6 +114,6 @@ const members = [
 
 > Para consolidar os conceitos de interpolação e renderização de listas que vimos hoje, preparei um desafio prático mais elaborado. Nele, você vai construir um catálogo completo aplicando toda a lógica de dinamismo que discutimos. Acesse a <Link to="/docs/atividades/atividade-interpolacao">**Atividade: Interpolação**</Link> no menu de atividades deste E-Book.
 
-:::info Próxima Aula: Props (Propriedades)
-Agora que você já sabe como transformar dados em interfaces dinâmicas dentro de um componente, o próximo passo é aprender como enviar informações de um componente para outro! Na próxima aula, vamos explorar as **Props**: o mecanismo fundamental do React para criar componentes verdadeiramente reutilizáveis e inteligentes.
+:::info Próxima Aula: Estilização de Componentes
+Agora que você já sabe como transformar dados em interfaces dinâmicas dentro de um componente, o próximo passo é aprender como dar estilo e forma a esses elementos! Na próxima aula, vamos explorar as propriedades de estilização com StyleSheet e o sistema de layout Flexbox no React Native.
 :::

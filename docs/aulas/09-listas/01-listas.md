@@ -153,6 +153,6 @@ Se estiver construindo um aplicativo de produção, como um feed infinito que fa
 
 ---
 
-:::info Próxima Aula: Estilização de Componentes
-Agora que você já domina os elementos básicos e componentes de lista, vamos mergulhar na organização visual. Na próxima aula, você aprenderá como abstrair o CSS utilizando `StyleSheet` e como organizar o layout de telas complexas utilizando **Flexbox**.
+:::info Próxima Aula: Context API
+Agora que você já domina os componentes de lista e o fluxo de dados local, o próximo desafio é gerenciar estados globais. Na próxima aula, aprenderemos sobre a **Context API**, que nos permite compartilhar informações (como temas ou sessões de usuário) por toda a árvore de componentes sem precisar passar propriedades manualmente.
 :::

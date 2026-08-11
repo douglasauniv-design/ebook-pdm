@@ -85,6 +85,6 @@ Agora é sua vez de colocar a mão na massa e criar layouts complexos utilizando
 
 ---
 
-:::info Próxima Aula: Context API
-Com o visual dominado, vamos aprender como gerenciar o estado global da sua aplicação utilizando a **Context API**, permitindo que informações sejam compartilhadas entre diversos componentes de forma simples e organizada.
+:::info Próxima Aula: Props (Propriedades)
+Com o visual e o layout dominados, o próximo passo é aprender a criar peças de interface que podem receber dados dinâmicos. Na próxima aula, vamos explorar as **Props**, o mecanismo fundamental do React para criar componentes verdadeiramente reutilizáveis e inteligentes.
 :::
