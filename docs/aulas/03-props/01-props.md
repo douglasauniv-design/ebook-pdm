@@ -171,7 +171,7 @@ No Snack a seguir, vamos criar um componente `Card` genérico, que aplica uma bo
 
 ## ⚡ Aprenda na Prática
 
-> Para exercitar o uso de Props, preparei um desafio prático onde você vai construir componentes muito úteis. Nele, você vai implementar "Screen Wrappers", esqueletos de tela que servirão de base para qualquer aplicação que você queira criar no futuro. Acesse a <Link to="/docs/atividades/atividade-screen-wrappers">**Atividade: Screen Wrappers**</Link> no menu de atividades deste E-Book.
+> Para exercitar o uso de Props, preparei um desafio prático onde você vai construir componentes reutilizáveis. Nele, você vai implementar um componente de perfil de usuário dinâmico e customizável. Acesse a <Link to="/docs/atividades/atividade-card-perfil">**Atividade: Perfil de Usuário**</Link> no menu de atividades deste E-Book.
 
 :::info Próxima Aula: Hooks e Estados (useState)
 Você já sabe como passar dados de um componente para outro, mas e se esses dados precisarem mudar? Como o app reage quando o usuário clica em um botão ou digita em um campo? Na próxima aula, vamos entrar no mundo dos **Hooks**, começando pelo `useState`: a ferramenta que permite ao seu componente "lembrar" de informações e atualizar a tela em tempo real.

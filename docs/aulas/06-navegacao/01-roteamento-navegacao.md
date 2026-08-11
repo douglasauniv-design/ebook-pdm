@@ -69,17 +69,16 @@ Para personalizar as opções de uma tela específica (como o título do cabeça
 
 ```tsx title="app/index.tsx"
 import { Stack } from 'expo-router';
-import { Text } from 'react-native';
-import ScreenWrapper from '@/components/ScreenWrapper';
+import { Text, View } from 'react-native';
 
 export default function HomeScreen() {
   return (
-    <ScreenWrapper.Scrollable>
+    <View style={{ flex: 1, padding: 20 }}>
       {/* O componente Stack.Screen configura a tela atual dinamicamente */}
       <Stack.Screen options={{ title: 'Página Inicial' }} />
 
       <Text>Conteúdo da página</Text>
-    </ScreenWrapper.Scrollable>
+    </View>
   );
 }
 ```
@@ -117,17 +116,16 @@ Use o componente `Link` quando a navegação é disparada por um clique direto d
 
 ```tsx
 import { Link } from 'expo-router';
-import { Text } from 'react-native';
-import ScreenWrapper from '@/components/ScreenWrapper';
+import { Text, View } from 'react-native';
 
 export default function HomeScreen() {
   return (
-    <ScreenWrapper.Scrollable>
+    <View style={{ flex: 1, padding: 20 }}>
       <Text>Bem-vindo ao app!</Text>
       <Link href="/about" style={{ color: 'blue' }}>
         Ir para a página Sobre
       </Link>
-    </ScreenWrapper.Scrollable>
+    </View>
   );
 }
 ```
@@ -149,8 +147,7 @@ Quando você precisa navegar após concluir alguma ação (por exemplo, após fa
 
 ```tsx
 import { router } from 'expo-router';
-import { Button } from 'react-native';
-import ScreenWrapper from '@/components/ScreenWrapper';
+import { Button, View } from 'react-native';
 
 export default function LoginScreen() {
   const handleLogin = () => {
@@ -160,9 +157,9 @@ export default function LoginScreen() {
   };
 
   return (
-    <ScreenWrapper.FullScreen>
+    <View style={{ flex: 1, justifyContent: 'center', padding: 20 }}>
       <Button title="Entrar" onPress={handleLogin} />
-    </ScreenWrapper.FullScreen>
+    </View>
   );
 }
 ```
@@ -208,18 +205,17 @@ Na tela de destino, utilizamos o hook `useLocalSearchParams` para capturar os pa
 
 ```tsx title="app/details/[id].tsx"
 import { useLocalSearchParams } from 'expo-router';
-import { Text } from 'react-native';
-import ScreenWrapper from '@/components/ScreenWrapper';
+import { Text, View } from 'react-native';
 
 export default function DetailsScreen() {
   // Capturando os parâmetros recebidos
   const { id, name } = useLocalSearchParams();
 
   return (
-    <ScreenWrapper.Scrollable>
+    <View style={{ flex: 1, padding: 20 }}>
       <Text>Detalhes do Item (Route Param): {id}</Text>
       <Text>Nome (Query Param): {name}</Text>
-    </ScreenWrapper.Scrollable>
+    </View>
   );
 }
 ```

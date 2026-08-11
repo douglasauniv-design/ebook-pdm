@@ -34,7 +34,7 @@ Seus componentes agora devem "se auto-estilizar" baseados no contexto. No arquiv
 
 #### Componentes a serem atualizados:
 
-- **`ScreenWrapper` (Scrollable/Fullscreen)**: 
+- **Componente de Tela / Container Principal** (ex: o container principal no `App.tsx` ou uma View de layout): 
     - No tema `light`: Fundo claro (ex: `#FFFFFF`).
     - No tema `dark`: Fundo escuro (ex: `#121212`).
   

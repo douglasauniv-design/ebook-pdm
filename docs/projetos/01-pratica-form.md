@@ -22,8 +22,8 @@ style={{ height: '400px', borderRadius: '10px', display: 'block', margin: '0 0 2
 
 Cada requisito vale 1 ponto:
 
-### 1. ScreenWrapper
-O componente principal da tela deve ser um `ScreenWrapper` construído por você (você deve ter ele pronto se entregou todas as atividades), garantindo que o conteúdo seja rolável em telas menores e respeite as áreas seguras (Safe Area).
+### 1. Layout Seguro e Rolável
+O layout da tela deve utilizar componentes adequados para gerenciar áreas seguras (`SafeAreaView`) e rolagem de conteúdo (`ScrollView`), garantindo que o conteúdo seja acessível e rolável em telas menores e não fique sob a barra de status do dispositivo.
 
 ### 2. Ciclo de Vida (loading simulado)
 Utilize um `useEffect` para exibir um aviso _"Sistema Carregado..."_, ele deve sumir assim que a tela for montada (simule um loading de 2s com timeout).
